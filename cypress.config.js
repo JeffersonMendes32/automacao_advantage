@@ -19,8 +19,9 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: 'cypress/e2e/web/stepDefinitions/**/*.features', // Define o padrão para arquivos de teste
-    baseUrl: 'https://advantageonlineshopping.com/',
-    supportFile: 'cypress/support/commands.js', // Certifique-se de que o caminho está correto
+    specPattern: 'cypress/e2e/features/productSearch.feature', // Define o padrão para arquivos de teste
+    baseUrl: 'https://advantageonlineshopping.com/#/',
+    supportFile: 'cypress/support/e2e.js', 
+    stepDefinitions: 'cypress/e2e/step_definitions/productSearch.js',
   },
 });
