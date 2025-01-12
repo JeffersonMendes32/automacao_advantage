@@ -1,5 +1,5 @@
 Cypress.Commands.add('buscarProduto', (nomeProduto) => {
-    cy.get('#searchInput').type(nomeProduto).type('{enter}');
+    cy.get(locator.login.fone).type(nomeProduto).type('{enter}');
   });
   
   Cypress.Commands.add('adicionarAoCarrinho', () => {
