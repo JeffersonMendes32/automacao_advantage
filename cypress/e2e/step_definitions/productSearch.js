@@ -1,8 +1,7 @@
-//import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
-import {Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
-import './commands';
+const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor');
+
 Given('pagina', () => {
-  cy.visit('/');
+  cy.visit('https://advantageonlineshopping.com/#/');
 });
 
 

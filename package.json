@@ -1,20 +1,21 @@
 {
-  "name": "automacao_advantage",
+  "name": "cypress-cucumber-web-api",
   "version": "1.0.0",
+  "description": "Projeto de automação com Cypress e Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
-    "cypress": "^13.17.0",
-    "esbuild": "^0.24.2"
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3", 
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4", 
+    "cypress": "^13.17.0", 
+    "esbuild": "^0.24.2" 
   },
-  "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^21.0.3"
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step_definitions/**/*.js"
   }
 }
